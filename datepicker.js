@@ -331,6 +331,7 @@ class DatePicker extends Component {
       timeZoneOffsetInMinutes,
       cancelBtnText,
       confirmBtnText,
+      locale,
       TouchableComponent,
       testID,
       cancelBtnTestID,
@@ -387,6 +388,7 @@ class DatePicker extends Component {
                       <DatePickerIOS
                         date={this.state.date}
                         mode={mode}
+                        locale={locale}
                         minimumDate={minDate && this.getDate(minDate)}
                         maximumDate={maxDate && this.getDate(maxDate)}
                         onDateChange={this.onDateChange}
@@ -446,7 +448,8 @@ DatePicker.defaultProps = {
   hideText: false,
   placeholder: '',
   TouchableComponent: TouchableHighlight,
-  modalOnResponderTerminationRequest: e => true
+  modalOnResponderTerminationRequest: e => true,
+  locale: "zh-Hant",
 };
 
 DatePicker.propTypes = {
@@ -471,7 +474,8 @@ DatePicker.propTypes = {
   onPressMask: PropTypes.func,
   placeholder: PropTypes.string,
   modalOnResponderTerminationRequest: PropTypes.func,
-  is24Hour: PropTypes.bool
+  is24Hour: PropTypes.bool,
+  locale: PropTypes.string,
 };
 
 export default DatePicker;

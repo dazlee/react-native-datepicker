@@ -1,6 +1,6 @@
 {
   "name": "react-native-datepicker",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "react native datePicker component for both Android and IOS, useing DatePikcerAndroid, TimePickerAndroid and DatePickerIOS",
   "main": "datepicker.js",
   "scripts": {
@@ -14,6 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/xgfe/react-native-datepicker.git"
   },
+  "publishConfig":{"registry":"http://npm.ljit.io"},
   "keywords": [
     "react-native",
     "DatePicker"
